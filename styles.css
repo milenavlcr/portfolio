@@ -928,6 +928,12 @@ body {
   .swiper {
     max-width: 350px;
   }
+
+  /* Texto dos cards legível no celular */
+  .swiper-slide p {
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
 }
 
 @media (min-width: 1840px) {
