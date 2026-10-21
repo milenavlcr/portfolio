@@ -863,6 +863,15 @@ body {
   opacity: .7;
 }
 
+/* Cards com um botão só: botão centralizado */
+.cta-project:has(> a:only-child) {
+  justify-content: center;
+}
+
+.cta-project a:only-child {
+  margin-right: 0;
+}
+
 @media (max-width: 375px) {
   .swiper-slide span {
     font-size: 1.5rem;
