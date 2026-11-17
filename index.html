@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="styles.css?v=2026-11-17g">
+    <link rel="stylesheet" href="styles.css?v=2026-11-17m">
 
     <title>Portfólio - Milena Valença </title>  
 </head>
@@ -28,6 +27,7 @@
       <ul class="navbar-links">
         <li><a href="#person">Home</a></li>
         <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#workflow">Fluxo IA</a></li>
         <li><a href="#stack">Stack</a></li>
@@ -42,42 +42,36 @@
 
 
     <!--Person-->
-    <section id="person">
-      <div class="person-content">
-        <p class="hero-badge"><span></span>CX &amp; AI Support Specialist · Yavendió!</p>
-
-        <div class="person-name">
-          <h1>Olá, <span></span></h1>
-          <h1>Meu nome é <span></span></h1>
-          <h1>Milena Valença<span></span></h1>
+    <section id="person" class="hx">
+      <div class="hx-wrap">
+        <div class="hx-top">
+          <img class="hx-avatar" src="./assets/newperfil.png" alt="Foto de Milena Valença">
+          <p class="hx-badge"><span></span>CX &amp; AI Support Specialist · ex-Yavendió!</p>
         </div>
 
-        <p class="hero-lead">Implemento agentes de IA que vendem pelo WhatsApp e transformo o que aprendo no suporte em melhorias para o produto.</p>
+        <h1 class="hx-name">Milena Valença</h1>
 
-        <div class="hero-actions">
+        <div class="hx-sub">
+          <p class="hx-loc"><i class="fa-solid fa-location-dot"></i> Recife, Brasil</p>
+        </div>
+
+        <p class="hx-lead">Especialista em CX e IA. Na Yavendió!, implementei agentes de IA que vendem pelo WhatsApp e aprendi a transformar o suporte em melhorias de produto.</p>
+
+        <div class="hx-actions">
           <a class="hero-btn hero-pri" href="#projects">Ver projetos <span>→</span></a>
           <a class="hero-btn hero-sec" href="https://calendar.app.google/kcjK7aw3rtmjyRnf8" target="_blank"><i class="fa-regular fa-calendar"></i> Agendar conversa</a>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/milena-valen%C3%A7a/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/milenavlcr" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:milenavlcr@gmail.com" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+          </div>
         </div>
 
-        <div class="links">
-          <a href="https://www.linkedin.com/in/milena-valen%C3%A7a/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/milenavlcr" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="mailto:milenavlcr@gmail.com" aria-label="E-mail">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="person-background">
-        <div class="wrapper-profile-photo">
-          <img class="profile-photo" src="./assets/newperfil.png" alt="Foto de Milena Valença">
-          <p class="hero-chip hero-chip-1"><b>117</b> casos em 30 dias</p>
-          <p class="hero-chip hero-chip-2">🌎 Bilíngue PT · ES</p>
-        </div>
+        <ul class="hx-stats">
+          <li><b>117</b> casos em 30 dias</li>
+          <li><b>56%</b> resolvidos na hora</li>
+          <li><b>PT · ES</b> bilíngue</li>
+        </ul>
       </div>
     </section>
 <!--End Person-->
@@ -95,7 +89,7 @@
   <div class="about-content">
     <p class="am-eyebrow"><span>01</span> — Tecnologia · Engenharia de Software · GenAI &amp; Dados</p>
     <h2 class="am-title">Faço a IA<br>vender <em>melhor.</em></h2>
-    <p class="am-lead">Sou CX &amp; AI Support Specialist bilíngue (português e espanhol) na Yavendió!, <span>onde implemento e configuro agentes de IA que vendem pelo WhatsApp para e-commerces do Brasil e da América Latina, do onboarding ao Go Live. Trabalho onde o cliente, o produto e a IA se encontram: resolvo casos, investigo bugs com o time técnico e transformo o que aprendo no suporte em melhorias para a plataforma.</span></p>
+    <p class="am-lead">Fui CX &amp; AI Support Specialist bilíngue (português e espanhol) na Yavendió!, uma das experiências mais importantes da minha carreira. <span>Lá implementei e configurei agentes de IA que vendem pelo WhatsApp para e-commerces do Brasil e da América Latina, do onboarding ao Go Live. Trabalhei onde o cliente, o produto e a IA se encontram: resolvi casos, investiguei bugs com o time técnico e transformei o que aprendi no suporte em melhorias para a plataforma. Levo esse aprendizado para cada próximo passo.</span></p>
 
     <div class="am-quote">
       <b>56%</b>
@@ -105,7 +99,7 @@
     <ul class="am-list">
       <li>Tickets que abri, já em produção <strong>20</strong></li>
       <li>Produtos cadastrados em 9 lojas <strong>500+</strong></li>
-      <li>Q&amp;A da Comunidade Yavendió! Brasil <strong>toda quinta</strong></li>
+      <li>Q&amp;A que conduzi na Comunidade Yavendió! Brasil <strong>semanal</strong></li>
       <li>Agente multiagente que criei para diagnosticar falhas de comportamento de IA <strong>AI-CADE</strong></li>
     </ul>
 
@@ -122,122 +116,160 @@
 </section>
 <!--End About-->
 
+<!--Experience-->
+<section id="experience">
+  <div class="wf-wrap">
+    <p class="am-eyebrow"><span>02</span> — Experiência</p>
+    <h2 class="pj-title">Onde eu <em>aprendi.</em></h2>
+
+    <div class="xp-list">
+
+      <article class="xp-item">
+        <p class="xp-date"><span></span>jun 2026 — nov 2026</p>
+        <div class="xp-body">
+          <div class="xp-co">
+            <div class="xp-logo xp-logo-ya"><img src="./assets/logos/yavendio.svg" alt="Yavendió!"></div>
+            <div>
+              <h3>Yavendió!</h3>
+              <p>CX &amp; AI Support Specialist bilíngue (PT · ES)</p>
+            </div>
+          </div>
+          <p class="xp-about">SaaS de IA para e-commerce, com vendedores de IA no WhatsApp para lojas do Brasil e da América Latina. Uma experiência que marcou a minha carreira.</p>
+          <ul class="xp-points">
+            <li>117 atendimentos em 30 dias, em 24 lojas: 56% resolvidos na própria sessão, sem depender do time técnico.</li>
+            <li>35 tickets abertos para Produto e Tecnologia; 20 já estavam em produção, em 6,5 dias em média.</li>
+            <li>Implementei o Vendedor IA para clientes da América Latina, do onboarding técnico ao Go Live.</li>
+          </ul>
+
+          <p class="xp-label">O que construí e liderei</p>
+          <div class="xp-grid">
+            <div class="xp-card xp-wide">
+              <div class="xp-card-top"><i class="fa-solid fa-microscope"></i><span class="xp-role">Criadora</span></div>
+              <h4>AI-CADE</h4>
+              <p>Agente multiagente que diagnostica falhas de comportamento de IA em 5 camadas, aponta a causa raiz com evidências e indica se o caso precisa ser escalado.</p>
+            </div>
+            <div class="xp-card">
+              <div class="xp-card-top"><i class="fa-solid fa-users"></i><span class="xp-role">Responsável</span></div>
+              <h4>Comunidade Brasil</h4>
+              <p>Q&amp;A semanal com os lojistas: dúvidas de configuração, novidades da plataforma e ideias de e-commerce.</p>
+            </div>
+            <div class="xp-card">
+              <div class="xp-card-top"><i class="fa-solid fa-shield-heart"></i></div>
+              <h4>Conta em risco</h4>
+              <p>Concentrei 29 casos de uma loja prestes a cancelar: 15 tickets, 13 em produção em 12 dias e a operação estabilizada.</p>
+            </div>
+            <div class="xp-card">
+              <div class="xp-card-top"><i class="fa-solid fa-code-branch"></i></div>
+              <h4>Motor x configuração</h4>
+              <p>Critério para separar bug de plataforma de ajuste de configuração: 8 ajustes em 7 lojas e 3 tickets evitados.</p>
+            </div>
+            <div class="xp-card">
+              <div class="xp-card-top"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>Catálogos</h4>
+              <p>531 produtos, 1.562 variantes e 1.383 fotos em 9 lojas. Uma delas foi de 215 para 500 produtos em um dia.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="xp-item">
+        <p class="xp-date"><span></span>mar 2026 — mai 2026</p>
+        <div class="xp-body">
+          <div class="xp-co">
+            <div class="xp-logo">S</div>
+            <div>
+              <h3>Sopha Tecnologia</h3>
+              <p>User Experience Jr (CX &amp; UX) · Suporte N1</p>
+            </div>
+          </div>
+          <ul class="xp-points">
+            <li>Primeiro ponto de contato: dúvidas, orientação sobre funcionalidades e registro de incidentes.</li>
+            <li>Mapeei a distância entre a proposta da ferramenta e o uso real nas lojas e recomendei ajustes de adoção e usabilidade.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="xp-item">
+        <p class="xp-date"><span></span>jul 2020 — abr 2025</p>
+        <div class="xp-body">
+          <div class="xp-co">
+            <div class="xp-logo">CT</div>
+            <div>
+              <h3>Cartão de TODOS</h3>
+              <p>Customer Relationship &amp; Collections Analyst · Data Quality &amp; CX Operations Analyst</p>
+            </div>
+          </div>
+          <ul class="xp-points">
+            <li>Liderança informal da equipe de conciliação: distribuição de carteiras e organização do fluxo do setor.</li>
+            <li>Negociação de débitos e reativação de benefícios com foco em retenção, acompanhando indicadores.</li>
+            <li>Suporte pós-venda e controles em planilhas para rastreabilidade de contratos.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!--End Experience-->
+
+
 <!--Project-->
 <section id="projects">
   <div class="projects-head">
-    <p class="am-eyebrow"><span>02</span> — Projetos</p>
+    <p class="am-eyebrow"><span>03</span> — Projetos</p>
     <h2 class="pj-title">Projetos que tirei <em>do papel.</em></h2>
   </div>
 
-  <div class="contain-projects">
-  <div class="swiper mySwiper">
-
-    <div class="swiper-wrapper">
-
-      <!--content-project-->
-      <div class="swiper-slide card-project">
-        <div class="image-project">
-          <a href="./assets/ai-cade-demo.mp4" target="_blank">
-        <img src="./assets/projeto concluído.png" alt="AI-CADE">
+  <div class="pj-grid">
+    <article class="pj-card">
+      <a class="pj-shot" href="./assets/ai-cade-demo.mp4" target="_blank" rel="noopener">
+        <img src="./assets/projetos/ai-cade.jpg" alt="AI-CADE mostrando o diagnóstico de um caso em 5 camadas" loading="lazy">
       </a>
-        </div>
-
-        <small class="pj-tag">IA · Yavendió!</small>
-        <span>AI-CADE</span>
-        <p>Agente de IA multiagente que criei para diagnosticar falhas de comportamento de IA. Analisa 5 camadas (configuração, prompt, base de conhecimento, modelo e plataforma), aponta a causa raiz com evidências e indica se o caso precisa ir para o time técnico.</p>
-
-        <div class="cta-project">
-          <a href="./assets/ai-cade-demo.mp4" target="_blank">
-            Ver demo
-            <i class= "fa-solid fa-play" ></i>
-          </a>
-        </div>
+      <div class="pj-head">
+        <h3>AI-CADE</h3>
+        <span class="pj-meta">Yavendió! · 2026</span>
       </div>
-      <div class="swiper-slide card-project">
-        <div class="image-project">
-          <a href="./public/prototipo/catalogo.html" target="_blank">
-        <img src="./assets/projeto concluído.png" alt="Reorganização de catálogo">
+      <p class="pj-desc">Agente multiagente que diagnostica falhas de comportamento de IA em 5 camadas e aponta a causa raiz com evidências.</p>
+      <ul class="pj-stack"><li>Claude</li><li>Multiagente</li><li>Prompt engineering</li></ul>
+      <a class="pj-link" href="./assets/ai-cade-demo.mp4" target="_blank" rel="noopener">ver demo em vídeo <span>↗</span></a>
+    </article>
+    <article class="pj-card">
+      <a class="pj-shot" href="./public/prototipo/catalogo.html" target="_blank" rel="noopener">
+        <img src="./assets/projetos/catalogo.jpg" alt="Protótipo da reorganização do catálogo, hoje e proposta" loading="lazy">
       </a>
-        </div>
-
-        <small class="pj-tag">UX · Yavendió!</small>
-        <span>Catálogo &amp; Vitrine</span>
-        <p>Reorganização do catálogo de uma loja com 919 produtos em 13 categorias repetidas: 6 categorias principais, padrão de nomes e protótipo interativo da loja no celular. A proposta virou base de uma funcionalidade da plataforma.</p>
-
-        <div class="cta-project">
-          <a href="./public/prototipo/catalogo.html" target="_blank">
-            Ver protótipo
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
+      <div class="pj-head">
+        <h3>Catálogo &amp; Vitrine</h3>
+        <span class="pj-meta">Yavendió! · 2026</span>
       </div>
-      <div class="swiper-slide card-project">
-        <div class="image-project">
-          <a href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/05/14/15/20260514150637-DB6JVPNB.json" target="_blank">
-        <img src="./assets/projeto concluído.png" alt="PlayerSync AI">
+      <p class="pj-desc">919 produtos em 13 categorias repetidas viraram 6 categorias principais. A proposta virou base de uma funcionalidade da plataforma.</p>
+      <ul class="pj-stack"><li>UX</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a class="pj-link" href="./public/prototipo/catalogo.html" target="_blank" rel="noopener">ver protótipo <span>↗</span></a>
+    </article>
+    <article class="pj-card">
+      <a class="pj-shot" href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/05/14/15/20260514150637-DB6JVPNB.json" target="_blank" rel="noopener">
+        <img src="./assets/projetos/playersync.jpg" alt="Tela inicial do assistente PlayerSync AI" loading="lazy">
       </a>
-        </div>
-
-        <small class="pj-tag">AI Agents · Projeto pessoal</small>
-        <span>PlayerSync AI</span>
-        <p>Assistente de IA criado no Botpress com tema retrô de arcade: o usuário conversa, explora jogos e escolhe aventuras numa experiência pixel art com visual neon. Projeto de AI Agents &amp; Automation com fluxos conversacionais e foco em experiência do usuário.</p>
-
-        <div class="cta-project">
-          <a href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/05/14/15/20260514150637-DB6JVPNB.json" target="_blank">
-            Site
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
+      <div class="pj-head">
+        <h3>PlayerSync AI</h3>
+        <span class="pj-meta">Pessoal · 2026</span>
       </div>
-      <div class="swiper-slide card-project">
-        <div class="image-project">
-          <a href="/">
-        <img src="./assets/projeto concluído.png" alt="img-em breve">
+      <p class="pj-desc">Assistente com tema arcade retrô: conversa, recomenda jogos e guia aventuras numa experiência pixel art.</p>
+      <ul class="pj-stack"><li>Botpress</li><li>Fluxos conversacionais</li></ul>
+      <a class="pj-link" href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/05/14/15/20260514150637-DB6JVPNB.json" target="_blank" rel="noopener">abrir assistente <span>↗</span></a>
+    </article>
+    <article class="pj-card">
+      <a class="pj-shot" href="https://milenavlcr.github.io/Projeto-de-Horas/" target="_blank" rel="noopener">
+        <img src="./assets/projetos/hora-do-dia.jpg" alt="Página Hora do dia com o horário atual" loading="lazy">
       </a>
-        </div>
-
-        <small class="pj-tag">Front-end · Projeto pessoal</small>
-        <span>Projeto Hora do dia</span>
-        <p>Projeto desenvolvido como parte do meu aprendizado em tech, este projeto mostra minha facilidade com ferramentas digitais por meio da atualização automática do horário e da adaptação visual conforme o período do dia, reforçando meu interesse em soluções práticas e interativas. &copy;</p>
-
-        <div class="cta-project">
-          <a href="https://github.com/milenavlcr/Projeto-de-Horas.git" target="_blank">
-            Código
-            <i class="fa-brands fa-github">
-            </i>
-          </a>
-          <a href="https://milenavlcr.github.io/Projeto-de-Horas/" target="_blank">
-            Site 
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
+      <div class="pj-head">
+        <h3>Hora do dia</h3>
+        <span class="pj-meta">Pessoal · 2024</span>
       </div>
-      <div class="swiper-slide card-project card-loading">
-        <div class="image-project">
-          <img src="./assets/loading projeto.jpeg" alt="Projeto em breve">
-        </div>
-
-        <small class="pj-tag">Em breve</small>
-        <span>Próximo projeto</span>
-        <p>/*Em breve os projetos estarão aqui*/</p>
-      </div>
-      <div class="swiper-slide card-project card-loading">
-        <div class="image-project">
-          <img src="./assets/loading projeto.jpeg" alt="Projeto em breve">
-        </div>
-
-        <small class="pj-tag">Em breve</small>
-        <span>Próximo projeto</span>
-        <p>/*Em breve os projetos estarão aqui*/</p>
-      </div>
-    </div>
-
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+      <p class="pj-desc">Página que mostra a hora atual e muda a imagem e as cores conforme o período do dia.</p>
+      <ul class="pj-stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a class="pj-link" href="https://milenavlcr.github.io/Projeto-de-Horas/" target="_blank" rel="noopener">milenavlcr.github.io/Projeto-de-Horas <span>↗</span></a>
+    </article>
   </div>
-</div>
-
 </section>
 <!--End Project-->
 
@@ -245,7 +277,7 @@
 <!--Workflow-->
 <section id="workflow">
   <div class="wf-wrap">
-    <p class="am-eyebrow"><span>03</span> — Como trabalho com IA</p>
+    <p class="am-eyebrow"><span>04</span> — Como trabalho com IA</p>
     <h2 class="pj-title">Um problema, <em>vários agentes.</em></h2>
     <p class="ct-lead">Cada caso começa com uma pergunta clara. A partir dela, coordeno agentes e ferramentas para investigar, provar com dados e entregar a solução.</p>
 
@@ -307,7 +339,7 @@
 <!--Stack-->
 <section id="stack">
   <div class="wf-wrap">
-    <p class="am-eyebrow"><span>04</span> — Stack</p>
+    <p class="am-eyebrow"><span>05</span> — Stack</p>
     <h2 class="pj-title">Com o que <em>eu trabalho.</em></h2>
 
     <div class="st-table">
@@ -358,7 +390,7 @@
 <!--Contacts-->
 <section id="contacts">
   <div class="contact-wrap">
-    <p class="am-eyebrow"><span>05</span> — Contato</p>
+    <p class="am-eyebrow"><span>06</span> — Contato</p>
     <h2 class="pj-title">Vamos <em>conversar?</em></h2>
     <p class="ct-lead">Quer trocar uma ideia sobre IA, Customer Experience ou produto? Agende um horário na minha agenda ou me chama por e-mail ou no LinkedIn.</p>
 
@@ -400,7 +432,6 @@
 </section>
 <!--End Footer-->
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
