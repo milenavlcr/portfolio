@@ -2393,3 +2393,61 @@ body {
 }
 
 .xp-date { align-self: start; }
+
+/* linha do tempo de cargos dentro da mesma empresa */
+.xp-roles {
+  position: relative;
+  margin-top: 26px;
+  list-style: none;
+  display: grid;
+  gap: 18px;
+}
+
+.xp-roles::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: rgba(255, 255, 255, .18);
+}
+
+.xp-roles li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.xp-roles li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .45);
+  background: var(--color-black);
+}
+
+.xp-roles li.is-last::before {
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.xp-roles b {
+  display: block;
+  font-weight: 500;
+  font-size: 16.5px;
+  color: rgba(255, 255, 255, .9);
+}
+
+.xp-roles span {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, .5);
+}
+
+.xp-logo img { object-fit: contain; }
