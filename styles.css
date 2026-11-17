@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 * {
   margin: 0px;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-sans, 'Inter', sans-serif);
 }
 
 #header {
@@ -650,7 +650,7 @@ body {
   margin-bottom: 3rem;
 
   font-size: calc(.7vw + .55rem);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-sans, 'Inter', sans-serif);
   font-weight: 700;
   letter-spacing: .15rem;
   color: var(--color-black);
@@ -1700,3 +1700,216 @@ a.ct-card:hover {
   .st-label { padding-top: 0; }
   .st-pills li { font-size: 14px; padding: 8px 14px; }
 }
+
+/* =========================================================
+   Ajuste minimalista (2026-11-17)
+   Uma cor de destaque (#9d4dff), sem brilhos nem gradientes,
+   bordas finas e rótulos em fonte mono.
+   Para voltar ao visual anterior, apague este bloco.
+   ========================================================= */
+
+/* fundos lisos */
+#person,
+#contacts,
+#workflow {
+  background: var(--color-black);
+}
+
+/* foto: anel fino no lugar do degradê e sem brilho atrás */
+.wrapper-profile-photo {
+  padding: 0;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, .16);
+}
+
+.wrapper-profile-photo::before {
+  display: none;
+}
+
+.profile-photo {
+  border-width: 8px;
+}
+
+/* botões principais: roxo sólido, sem sombra colorida */
+.hero-pri,
+.ct-book {
+  background: #9d4dff;
+  box-shadow: none;
+}
+
+.hero-pri:hover,
+.ct-book:hover {
+  background: #8a3df0;
+  box-shadow: none;
+}
+
+/* ponto verde do selo sem brilho */
+.hero-badge span { box-shadow: none; }
+
+/* ícones dos cartões de contato e do Fluxo IA: caixa escura com borda */
+.ct-ico,
+.wf-hub .wf-ico {
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.wf-hub {
+  box-shadow: none;
+}
+
+/* rótulos de seção em fonte mono, como na seção Stack */
+.am-eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   Tipografia premium (2026-11-17)
+   Títulos: Instrument Serif · Textos: Inter · Rótulos: JetBrains Mono
+   ========================================================= */
+:root {
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}
+
+body,
+button,
+.ct-mail,
+.hero-btn,
+.ct-book {
+  font-family: var(--font-sans);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* logo do topo */
+.header-title h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 2.6rem;
+  letter-spacing: -.01em;
+}
+
+.navbar-links a {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+
+/* títulos grandes em serifa, peso normal */
+.person-content div h1,
+.am-title,
+.pj-title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -.015em;
+  line-height: 1.02;
+}
+
+.person-content div h1 {
+  font-size: calc(3.6vw + 26px);
+}
+
+.am-title,
+.pj-title {
+  font-size: calc(3vw + 30px);
+}
+
+/* palavra de destaque: itálico roxo */
+.am-title em,
+.pj-title em,
+.person-content div h1:nth-child(3) {
+  font-style: italic;
+}
+
+/* números e destaques em serifa */
+.am-quote b {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 104px;
+  letter-spacing: -.02em;
+}
+
+.am-list strong,
+.wf-results strong {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.card-project span {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -.01em;
+}
+
+.ct-mail {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: calc(2.2vw + 18px);
+  letter-spacing: 0;
+  border-bottom-width: 1px;
+}
+
+/* textos corridos mais leves */
+.hero-lead,
+.ct-lead,
+.am-lead,
+.am-edu,
+.card-project p,
+.wf-desc,
+.am-list li {
+  font-weight: 400;
+  letter-spacing: -.005em;
+}
+
+.wf-name,
+.ct-card p,
+.st-pills li {
+  font-weight: 500;
+}
+
+.hero-btn,
+.ct-book,
+.header-cta {
+  font-weight: 500;
+  letter-spacing: .005em;
+}
+
+/* rótulos em mono */
+.am-eyebrow,
+.am-tags,
+.pj-tag,
+.hero-badge,
+.hero-chip,
+.wf-start,
+.wf-name small,
+.st-label,
+.ct-card small {
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
+
+.hero-badge,
+.hero-chip {
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 768px) {
+  .header-title h1 { font-size: 2.2rem; }
+  .hero-badge,
+  .hero-chip { font-size: 11px; letter-spacing: 0; }
+  .hero-chip b { font-size: 13px; }
+}
+
+.am-quote { border-left: 1px solid #9d4dff; }
