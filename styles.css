@@ -8,10 +8,10 @@
 
 :root {
   --color-white: #fff;
-  --color-pink: #d12f7a;
+  --color-pink: #8a8a66;
   --color-blue: #073fcc;
   --color-black: #0c0c0c;
-  --color-purple: #5f01ac;
+  --color-purple: #6b6b4e; /* oliva escuro (antes roxo) */
 }
 
 html {
@@ -220,13 +220,13 @@ body {
   color: var(--color-white);
   text-decoration: none;
 
-  border: 1px solid rgba(157, 77, 255, .6);
-  background: rgba(95, 1, 172, .25);
+  border: 1px solid rgba(169, 168, 130, .6);
+  background: rgba(107, 107, 78, .25);
   transition: background .3s ease;
 }
 
 .header-cta:hover {
-  background: rgba(95, 1, 172, .5);
+  background: rgba(107, 107, 78, .5);
 }
 
 /* Topo (hero) */
@@ -241,8 +241,8 @@ body {
   padding: 120px 72px 80px;
   color: var(--color-white);
   background:
-    radial-gradient(40% 55% at 78% 45%, rgba(95, 1, 172, .35), transparent 70%),
-    radial-gradient(35% 40% at 0% 100%, rgba(157, 77, 255, .12), transparent 70%),
+    radial-gradient(40% 55% at 78% 45%, rgba(107, 107, 78, .35), transparent 70%),
+    radial-gradient(35% 40% at 0% 100%, rgba(169, 168, 130, .12), transparent 70%),
     var(--color-black);
 }
 
@@ -310,7 +310,7 @@ body {
   left: 0;
   width: 0px;
   height: 100%;
-  background: #9d4dff;
+  background: #a9a882;
   animation: written_text_box 1s ease;
 }
 
@@ -355,13 +355,13 @@ body {
 }
 
 .hero-pri {
-  background: linear-gradient(90deg, var(--color-purple), #9d4dff);
-  box-shadow: 0 12px 30px rgba(157, 77, 255, .35);
+  background: linear-gradient(90deg, var(--color-purple), #a9a882);
+  box-shadow: 0 12px 30px rgba(169, 168, 130, .35);
 }
 
 .hero-pri:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 38px rgba(157, 77, 255, .5);
+  box-shadow: 0 16px 38px rgba(169, 168, 130, .5);
 }
 
 .hero-sec {
@@ -393,7 +393,7 @@ body {
 
 .links a:hover {
   color: var(--color-white);
-  border-color: rgba(157, 77, 255, .6);
+  border-color: rgba(169, 168, 130, .6);
   transform: translateY(-2px);
 }
 
@@ -407,7 +407,7 @@ body {
   position: relative;
   padding: 6px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #9d4dff, var(--color-purple) 55%, var(--color-pink));
+  background: linear-gradient(135deg, #a9a882, var(--color-purple) 55%, var(--color-pink));
 }
 
 /* Brilho roxo atrás da foto */
@@ -417,7 +417,7 @@ body {
   inset: -22%;
   z-index: -1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(157, 77, 255, .38), transparent 65%);
+  background: radial-gradient(circle, rgba(169, 168, 130, .38), transparent 65%);
 }
 
 .profile-photo {
@@ -726,7 +726,7 @@ body {
 
 /* Conteúdo da seção Sobre (Modelo B, editorial em roxo) */
 .about-content {
-  --am-purple-light: #9d4dff;
+  --am-purple-light: #a9a882;
   --am-muted: rgba(255, 255, 255, .66);
 
   width: 50%;
@@ -973,7 +973,7 @@ body {
 /* Final da sobre */
 
 #projects {
-  --swiper-theme-color: #9d4dff;
+  --swiper-theme-color: #a9a882;
   --swiper-navigation-size: 16px;
 
   width: 100%;
@@ -992,7 +992,7 @@ body {
 }
 
 .projects-head .am-eyebrow span {
-  color: #9d4dff;
+  color: #a9a882;
 }
 
 .pj-title {
@@ -1006,7 +1006,7 @@ body {
 
 .pj-title em {
   font-style: normal;
-  color: #9d4dff;
+  color: #a9a882;
 }
 
 .swiper {
@@ -1032,7 +1032,7 @@ body {
 
 .card-project:hover {
   transform: translateY(-4px);
-  border-color: rgba(157, 77, 255, .45);
+  border-color: rgba(169, 168, 130, .45);
 }
 
 .image-project {
@@ -1064,7 +1064,7 @@ body {
   font-weight: 600;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: #9d4dff;
+  color: #a9a882;
 }
 
 .card-project span {
@@ -1164,7 +1164,7 @@ body {
 #projects .swiper-pagination-bullet-active {
   width: 22px;
   border-radius: 4px;
-  background: #9d4dff;
+  background: #a9a882;
   opacity: 1;
 }
 
@@ -1191,7 +1191,7 @@ body {
   padding: 110px 72px 120px;
   color: var(--color-white);
   background:
-    radial-gradient(45% 70% at 0% 100%, rgba(95, 1, 172, .25), transparent 70%),
+    radial-gradient(45% 70% at 0% 100%, rgba(107, 107, 78, .25), transparent 70%),
     var(--color-black);
 }
 
@@ -1205,7 +1205,7 @@ body {
 }
 
 .contact-wrap .am-eyebrow span {
-  color: #9d4dff;
+  color: #a9a882;
 }
 
 .ct-lead {
@@ -1236,14 +1236,14 @@ body {
   color: var(--color-white);
   text-decoration: none;
 
-  background: linear-gradient(90deg, var(--color-purple), #9d4dff);
-  box-shadow: 0 12px 34px rgba(157, 77, 255, .35);
+  background: linear-gradient(90deg, var(--color-purple), #a9a882);
+  box-shadow: 0 12px 34px rgba(169, 168, 130, .35);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .ct-book:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(157, 77, 255, .5);
+  box-shadow: 0 16px 40px rgba(169, 168, 130, .5);
 }
 
 .ct-book span {
@@ -1271,7 +1271,7 @@ body {
 }
 
 .ct-mail span {
-  color: #9d4dff;
+  color: #a9a882;
   transition: transform .3s ease;
 }
 
@@ -1302,7 +1302,7 @@ body {
 
 a.ct-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(157, 77, 255, .45);
+  border-color: rgba(169, 168, 130, .45);
 }
 
 .ct-ico {
@@ -1313,7 +1313,7 @@ a.ct-card:hover {
   border-radius: 14px;
   font-size: 18px;
   color: var(--color-white);
-  background: linear-gradient(135deg, var(--color-purple), #9d4dff);
+  background: linear-gradient(135deg, var(--color-purple), #a9a882);
 }
 
 .ct-card small {
@@ -1430,7 +1430,7 @@ a.ct-card:hover {
 
 @keyframes written_text_name {
   100% {
-    color: #9d4dff;
+    color: #a9a882;
   }
 }
 
@@ -1452,7 +1452,7 @@ a.ct-card:hover {
   padding: 110px 72px 120px;
   color: var(--color-white);
   background:
-    radial-gradient(40% 50% at 50% 30%, rgba(157, 77, 255, .14), transparent 70%),
+    radial-gradient(40% 50% at 50% 30%, rgba(169, 168, 130, .14), transparent 70%),
     var(--color-black);
 }
 
@@ -1462,7 +1462,7 @@ a.ct-card:hover {
 }
 
 .wf-wrap .am-eyebrow { color: rgba(255, 255, 255, .66); }
-.wf-wrap .am-eyebrow span { color: #9d4dff; }
+.wf-wrap .am-eyebrow span { color: #a9a882; }
 
 .wf-diagram {
   display: flex;
@@ -1507,8 +1507,8 @@ a.ct-card:hover {
 .wf-hub {
   width: min(520px, 100%);
   padding: 24px 26px;
-  border-color: rgba(157, 77, 255, .45);
-  box-shadow: 0 0 60px rgba(157, 77, 255, .18);
+  border-color: rgba(169, 168, 130, .45);
+  box-shadow: 0 0 60px rgba(169, 168, 130, .18);
 }
 
 .wf-grid {
@@ -1548,7 +1548,7 @@ a.ct-card:hover {
 
 .wf-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(157, 77, 255, .45);
+  border-color: rgba(169, 168, 130, .45);
 }
 
 .wf-ico {
@@ -1559,7 +1559,7 @@ a.ct-card:hover {
   border-radius: 14px;
   font-size: 18px;
   color: var(--color-white);
-  background: linear-gradient(135deg, var(--color-purple), #9d4dff);
+  background: linear-gradient(135deg, var(--color-purple), #a9a882);
 }
 
 .wf-name {
@@ -1578,8 +1578,8 @@ a.ct-card:hover {
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: #c9a3ff;
-  background: rgba(157, 77, 255, .16);
+  color: #dcdcc6;
+  background: rgba(169, 168, 130, .16);
 }
 
 .wf-desc {
@@ -1603,7 +1603,7 @@ a.ct-card:hover {
 .wf-results strong {
   margin-right: 6px;
   font-size: 22px;
-  color: #9d4dff;
+  color: #a9a882;
 }
 
 @media (max-width: 1000px) {
@@ -1683,7 +1683,7 @@ a.ct-card:hover {
   transition: border-color .3s ease;
 }
 
-.st-pills li:hover { border-color: rgba(157, 77, 255, .5); }
+.st-pills li:hover { border-color: rgba(169, 168, 130, .5); }
 
 .st-pills img,
 .st-pills i {
@@ -1703,7 +1703,7 @@ a.ct-card:hover {
 
 /* =========================================================
    Ajuste minimalista (2026-11-17)
-   Uma cor de destaque (#9d4dff), sem brilhos nem gradientes,
+   Uma cor de destaque (#a9a882), sem brilhos nem gradientes,
    bordas finas e rótulos em fonte mono.
    Para voltar ao visual anterior, apague este bloco.
    ========================================================= */
@@ -1733,13 +1733,13 @@ a.ct-card:hover {
 /* botões principais: roxo sólido, sem sombra colorida */
 .hero-pri,
 .ct-book {
-  background: #9d4dff;
+  background: #a9a882;
   box-shadow: none;
 }
 
 .hero-pri:hover,
 .ct-book:hover {
-  background: #8a3df0;
+  background: #95946f;
   box-shadow: none;
 }
 
@@ -1912,4 +1912,25 @@ body {
   .hero-chip b { font-size: 13px; }
 }
 
-.am-quote { border-left: 1px solid #9d4dff; }
+.am-quote { border-left: 1px solid #a9a882; }
+
+
+/* =========================================================
+   Paleta neutra (2026-11-17): sálvia no lugar do roxo
+   Destaque #a9a882 · Escuro #6b6b4e · Claro #dcdcc6
+   ========================================================= */
+.hero-pri,
+.ct-book,
+.hero-pri:hover,
+.ct-book:hover {
+  color: #0c0c0c;
+}
+
+/* foto do notebook em preto e branco, sem a luz roxa */
+.img-wrapper img {
+  filter: grayscale(1) brightness(.85);
+}
+
+::selection {
+  background: rgba(169, 168, 130, .35);
+}
