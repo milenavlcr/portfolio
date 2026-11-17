@@ -1619,3 +1619,84 @@ a.ct-card:hover {
   .wf-start { font-size: 12px; text-align: center; }
   .wf-results { justify-content: flex-start; }
 }
+
+/* logos no Fluxo IA: caixa escura e logo branco (mais minimalista) */
+.wf-ico img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.wf-card .wf-ico {
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* ---------- Stack ---------- */
+#stack {
+  width: 100%;
+  padding: 110px 72px 120px;
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+.st-table {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.st-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.st-label {
+  padding-top: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .55);
+}
+
+.st-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.st-pills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: #121212;
+  font-size: 15.5px;
+  color: rgba(255, 255, 255, .9);
+  transition: border-color .3s ease;
+}
+
+.st-pills li:hover { border-color: rgba(157, 77, 255, .5); }
+
+.st-pills img,
+.st-pills i {
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  text-align: center;
+  opacity: .85;
+}
+
+@media (max-width: 768px) {
+  #stack { padding: 90px 16px 100px; }
+  .st-row { grid-template-columns: 1fr; gap: 14px; padding: 28px 0; }
+  .st-label { padding-top: 0; }
+  .st-pills li { font-size: 14px; padding: 8px 14px; }
+}
