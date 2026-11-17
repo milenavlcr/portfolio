@@ -2451,3 +2451,38 @@ body {
 }
 
 .xp-logo img { object-fit: contain; }
+
+/* =========================================================
+   Logos: cinza por padrão, cor da marca ao passar o mouse
+   ========================================================= */
+.lg {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, .55);
+  -webkit-mask: var(--logo) center / contain no-repeat;
+  mask: var(--logo) center / contain no-repeat;
+  transition: background-color .3s ease;
+}
+
+.st-pills li i {
+  opacity: 1;
+  color: rgba(255, 255, 255, .55);
+  transition: color .3s ease;
+}
+
+.st-pills li:hover .lg { background-color: var(--brand); }
+.st-pills li:hover i { color: var(--brand); }
+
+.wf-ico .lg { width: 22px; height: 22px; }
+.wf-card:hover .lg,
+.wf-hub:hover .lg { background-color: var(--brand); }
+.wf-hub .lg { background-color: var(--brand); }
+
+/* Experiência: logos com as cores das empresas */
+.xp-logo-ya { background: #6A2F65; }
+.xp-logo-sopha { background: #ffffff; border-color: transparent; padding: 10px; }
+.xp-logo-cdt { background: #161616; padding: 8px; }
+.xp-logo-sopha img,
+.xp-logo-cdt img { width: 100%; height: 100%; }
