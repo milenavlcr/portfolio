@@ -2757,3 +2757,35 @@ body {
   .cs-steps li { grid-template-columns: 1fr; gap: 4px; padding-left: 22px; }
   .cs-steps p { font-size: 15.5px; }
 }
+
+/* link para o exercício de produto (mini-PRD) */
+.cs-extra {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 34px 36px;
+  border-radius: 20px;
+  border: 1px solid rgba(169, 168, 130, .35);
+  background: rgba(169, 168, 130, .05);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: border-color .3s ease, background .3s ease;
+}
+
+.cs-extra:hover { border-color: #a9a882; background: rgba(169, 168, 130, .09); }
+
+.cs-extra-title {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.cs-extra-title em { font-style: italic; color: #a9a882; }
+
+.cs-extra-desc { font-size: 16px; color: rgba(255, 255, 255, .62); }
+.cs-extra .pj-link { margin-top: 4px; }
+
+@media (max-width: 768px) {
+  .cs-extra { padding: 26px 22px; }
+  .cs-extra-title { font-size: 28px; }
+}
