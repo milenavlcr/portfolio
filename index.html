@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="styles.css?v=2026-11-18d">
+    <link rel="stylesheet" href="styles.css?v=2026-11-18e">
 
     <title>Portfólio - Milena Valença </title>  
 </head>
@@ -25,9 +25,9 @@
       <button class="menu-hamburguer"></button>
 
       <ul class="navbar-links">
-        <li><a href="#person">Home</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#experience">Experiência</a></li>
+        <li><a href="#cases">Casos</a></li>
         <li><a href="#recommendations">Recomendações</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#workflow">Fluxo IA</a></li>
@@ -47,7 +47,7 @@
       <div class="hx-wrap">
         <div class="hx-top">
           <img class="hx-avatar" src="./assets/newperfil.png" alt="Foto de Milena Valença">
-          <p class="hx-badge"><span></span>CX &amp; AI Support Specialist · ex-Yavendió!</p>
+          <p class="hx-badge"><span></span>Product Operations · ex-Yavendió!</p>
         </div>
 
         <h1 class="hx-name">Milena Valença</h1>
@@ -56,10 +56,10 @@
           <p class="hx-loc"><i class="fa-solid fa-location-dot"></i> Recife, Brasil</p>
         </div>
 
-        <p class="hx-lead">Especialista em CX e IA. Na Yavendió!, implementei agentes de IA que vendem pelo WhatsApp e aprendi a transformar o suporte em melhorias de produto.</p>
+        <p class="hx-lead">Produto e operações em SaaS de IA: transformo o que o cliente vive em melhorias de produto. Na Yavendió!, levei 35 tickets à engenharia e propus uma vitrine que virou funcionalidade da plataforma.</p>
 
         <div class="hx-actions">
-          <a class="hero-btn hero-pri" href="#projects">Ver projetos <span>→</span></a>
+          <a class="hero-btn hero-pri" href="#cases">Ver estudos de caso <span>→</span></a>
           <a class="hero-btn hero-sec" href="https://calendar.app.google/kcjK7aw3rtmjyRnf8" target="_blank"><i class="fa-regular fa-calendar"></i> Agendar conversa</a>
           <div class="links">
             <a href="https://www.linkedin.com/in/milena-valen%C3%A7a/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -221,10 +221,74 @@
 </section>
 <!--End Experience-->
 
+<!--Cases-->
+<section id="cases">
+  <div class="wf-wrap">
+    <p class="am-eyebrow"><span>03</span> — Estudos de caso</p>
+    <h2 class="pj-title">Como eu penso <em>produto.</em></h2>
+    <p class="ct-lead cs-lead">Três casos reais, contados do problema ao resultado.</p>
+
+    <div class="cs-list">
+      <article class="cs-item">
+        <div class="cs-side">
+          <span class="cs-num">01</span>
+          <h3>Catálogo &amp; Vitrine · Chik Bijux</h3>
+          <p class="cs-meta">Yavendió! · 2026 · Discovery e protótipo</p>
+          <a class="cs-thumb" href="https://store.yavendio.com/br/chik-bijux" target="_blank" rel="noopener"><img src="./assets/projetos/chik-bijux.jpg" alt="Vitrine por categorias da loja Chik Bijux" loading="lazy"></a>
+          <div class="pj-links">
+            <a class="pj-link" href="https://store.yavendio.com/br/chik-bijux" target="_blank" rel="noopener">ver a loja <span>↗</span></a>
+            <a class="pj-link" href="./public/prototipo/catalogo.html" target="_blank" rel="noopener">ver protótipo <span>↗</span></a>
+          </div>
+        </div>
+        <ol class="cs-steps">
+          <li><span class="cs-step">Problema</span><p>Uma loja com <b>919 produtos</b> espalhados em <b>13 categorias</b> que se repetiam. A cliente final não achava o que procurava, e a loja não tinha um link só para divulgar nas redes.</p></li>
+          <li><span class="cs-step">Descoberta</span><p>Mapeei as categorias, os nomes e os tamanhos dos produtos e como a loja divulgava os links no dia a dia.</p></li>
+          <li><span class="cs-step">Decisão</span><p>Propus <b>6 categorias principais</b> com subcategorias, um padrão de nomes para os produtos e um link único para as redes.</p></li>
+          <li><span class="cs-step">Entrega</span><p><b>Protótipo interativo</b> da loja no celular, comparando Hoje x Proposta, para o time de produto ver a ideia funcionando.</p></li>
+          <li><span class="cs-step">Resultado</span><p>A proposta virou a <b>vitrine por categorias da plataforma</b>, hoje no ar na loja Chik Bijux.</p></li>
+        </ol>
+      </article>
+
+      <article class="cs-item">
+        <div class="cs-side">
+          <span class="cs-num">02</span>
+          <h3>Critério “motor x configuração”</h3>
+          <p class="cs-meta">Yavendió! · 2026 · Priorização</p>
+        </div>
+        <ol class="cs-steps">
+          <li><span class="cs-step">Problema</span><p>Muitos casos chegavam à engenharia como “bug”, mas parte deles era ajuste de configuração da loja. Isso ocupava o time técnico e deixava o cliente esperando.</p></li>
+          <li><span class="cs-step">Descoberta</span><p>Comparei os padrões dos casos do Brasil e do Peru para separar onde a falha estava no motor da plataforma e onde estava na configuração.</p></li>
+          <li><span class="cs-step">Decisão</span><p>Criei um critério para classificar cada caso antes de escalar: bug de plataforma vai para a engenharia; ajuste de configuração eu resolvo direto.</p></li>
+          <li><span class="cs-step">Entrega</span><p>Em uma quinzena, publiquei e testei <b>8 ajustes de agente em 7 lojas</b>.</p></li>
+          <li><span class="cs-step">Resultado</span><p><b>3 tickets</b> que não eram bug deixaram de ir para a engenharia, liberando o time técnico para os bugs reais.</p></li>
+        </ol>
+      </article>
+
+      <article class="cs-item">
+        <div class="cs-side">
+          <span class="cs-num">03</span>
+          <h3>Conta em risco de cancelamento</h3>
+          <p class="cs-meta">Yavendió! · 2026 · Execução com engenharia</p>
+          <p class="cs-quote">“…protected strategic accounts that were at high risk of churning.”<span>Marcelo Gonzalez Coelho, gestor direto</span></p>
+        </div>
+        <ol class="cs-steps">
+          <li><span class="cs-step">Problema</span><p>Uma loja estratégica estava prestes a cancelar, com vários problemas abertos ao mesmo tempo.</p></li>
+          <li><span class="cs-step">Descoberta</span><p>Reuni os <b>29 casos</b> da loja em um só lugar para enxergar os padrões e separar o que era urgente.</p></li>
+          <li><span class="cs-step">Decisão</span><p>Transformei os problemas em <b>15 tickets</b> claros para a engenharia, com contexto e passos para reproduzir.</p></li>
+          <li><span class="cs-step">Entrega</span><p>Acompanhei cada ticket com o time técnico até a produção.</p></li>
+          <li><span class="cs-step">Resultado</span><p><b>13 tickets em produção em 12 dias</b> e a operação do cliente estabilizada.</p></li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+<!--End Cases-->
+
+
 <!--Recommendations-->
 <section id="recommendations">
   <div class="wf-wrap">
-    <p class="am-eyebrow"><span>03</span> — Recomendações</p>
+    <p class="am-eyebrow"><span>04</span> — Recomendações</p>
     <h2 class="pj-title">O que dizem <em>sobre mim.</em></h2>
     <p class="ct-lead rc-lead">Recomendações que recebi no LinkedIn, no idioma original.</p>
 
@@ -297,7 +361,7 @@
 <!--Project-->
 <section id="projects">
   <div class="projects-head">
-    <p class="am-eyebrow"><span>04</span> — Projetos</p>
+    <p class="am-eyebrow"><span>05</span> — Projetos</p>
     <h2 class="pj-title">Projetos que tirei <em>do papel.</em></h2>
   </div>
 
@@ -361,7 +425,7 @@
 <!--Workflow-->
 <section id="workflow">
   <div class="wf-wrap">
-    <p class="am-eyebrow"><span>05</span> — Como trabalho com IA</p>
+    <p class="am-eyebrow"><span>06</span> — Como trabalho com IA</p>
     <h2 class="pj-title">Um problema, <em>vários agentes.</em></h2>
     <p class="ct-lead">Cada caso começa com uma pergunta clara. A partir dela, coordeno agentes e ferramentas para investigar, provar com dados e entregar a solução.</p>
 
@@ -423,7 +487,7 @@
 <!--Stack-->
 <section id="stack">
   <div class="wf-wrap">
-    <p class="am-eyebrow"><span>06</span> — Stack</p>
+    <p class="am-eyebrow"><span>07</span> — Stack</p>
     <h2 class="pj-title">Com o que <em>eu trabalho.</em></h2>
 
     <div class="st-table">
@@ -474,7 +538,7 @@
 <!--Contacts-->
 <section id="contacts">
   <div class="contact-wrap">
-    <p class="am-eyebrow"><span>07</span> — Contato</p>
+    <p class="am-eyebrow"><span>08</span> — Contato</p>
     <h2 class="pj-title">Vamos <em>conversar?</em></h2>
     <p class="ct-lead">Quer trocar uma ideia sobre IA, Customer Experience ou produto? Agende um horário na minha agenda ou me chama por e-mail ou no LinkedIn.</p>
 
